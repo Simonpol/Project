@@ -101,8 +101,83 @@ border-color: white;
 font-family: "Raleway-Regular", sans-serif;
 font-size: 30px;
 }
-
-
-
+/*Какие задачи я выполняю
+*/
+.skills{
+	background-image: url(../img/bgsec.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 675px;
 	
-	
+}
+.skills__what{
+	font-family:"Raleway-Bold", sans-serif;
+	font-size: 36px;
+	margin: 0 auto;
+	float: none;
+	width: 452px;
+	margin-top: 55px;
+}
+.skills__listone{
+	margin-top: 67px;
+	display: flex;
+}
+.skills__fixed{
+	width: 220px;
+	height: 220px;
+	margin-left: 80px;
+	border: 2px solid;
+	border-color: #cccccc;
+	background-color: white;
+}
+.skills__adaptive{
+	width: 220px;
+	height: 220px;
+	margin-left: 161px;
+	border: 2px solid;
+	border-color: #cccccc;
+	background-color: white;
+}
+.skills__crossbrowser{
+	width: 220px;
+	height: 220px;
+	margin-left: 161px;
+	border: 2px solid;
+	border-color: #cccccc;
+	background-color: white;
+}
+.skills__listtwo{
+	margin-top: 55px;
+	display: flex;
+}
+.skills__design{
+	width: 220px;
+	height: 220px;
+	margin-left: 80px;
+	border: 2px solid;
+	border-color: #cccccc;
+	background-color: white;
+}
+.skills__hosting{
+	width: 220px;
+	height: 220px;
+	margin-left: 161px;
+	border: 2px solid;
+	border-color: #cccccc;	
+	background-color: white;
+}
+.skills__support{
+	width: 220px;
+	height: 220px;
+	margin-left: 161px;
+	border: 2px solid;
+	border-color: #cccccc;
+	background-color: white;
+}
+.skills__icon{
+	display: block;
+	margin-top: 25px;
+	margin: 0 auto;
+	margin-top: 25px;
+}
