@@ -59,12 +59,17 @@ p{
 .header__link{
 	display: flex;
 	text-decoration: none;
+	line-height: 2;
 	font-family: "Raleway-Bold", sans-serif;
 	text-transform: uppercase;
 	color: white;
+	cursor: pointer;
+	/*padding: 4px;*/
 	margin-left: 36px;
-	/*border-bottom: solid 2px;
-	padding-bottom: 3px;*/
+	/*border: solid white 2px;*/
+}
+a:hover{
+	text-decoration: underline;
 }
 /*Content*/
 
@@ -84,6 +89,7 @@ p{
 	line-height: 45px;
 	margin-top: 269px;
 	position: 0;
+	
 
 }
 .intro__quote{
@@ -139,6 +145,14 @@ font-size: 30px;
 	border-color: #cccccc;
 	background-color: white;
 }
+.skills__fixed:hover{
+	position: relative;
+	opacity: 1;
+	transform: scale(1.5);
+	transition: 0.5s;
+	color: white;
+	background-color: #4f3e85;
+}
 .skills__adaptive{
 	width: 220px;
 	height: 220px;
@@ -147,6 +161,15 @@ font-size: 30px;
 	border-color: #cccccc;
 	background-color: white;
 }
+.skills__adaptive:hover{
+	position: relative;
+	opacity: 1;
+	transform: scale(1.5);
+	transition: 0.5s;
+	color: white;
+	background-color: #4f3e85;
+
+}
 .skills__crossbrowser{
 	width: 220px;
 	height: 220px;
@@ -154,6 +177,14 @@ font-size: 30px;
 	border: 2px solid;
 	border-color: #cccccc;
 	background-color: white;
+}
+.skills__crossbrowser:hover{
+	position: relative;
+	opacity: 1;
+	transform: scale(1.5);
+	transition: 0.5s;
+	color: white;
+	background-color: #4f3e85;
 }
 .skills__listtwo{
 	margin-top: 55px;
@@ -167,6 +198,14 @@ font-size: 30px;
 	border-color: #cccccc;
 	background-color: white;
 }
+.skills__design:hover{
+	position: relative;
+	opacity: 1;
+	transform: scale(1.5);
+	transition: 0.5s;
+	color: white;
+	background-color: #4f3e85;
+}
 .skills__hosting{
 	width: 220px;
 	height: 220px;
@@ -174,6 +213,14 @@ font-size: 30px;
 	border: 2px solid;
 	border-color: #cccccc;	
 	background-color: white;
+}
+.skills__hosting:hover{
+	position: relative;
+	opacity: 1;
+	transform: scale(1.5);
+	transition: 0.5s;
+	color: white;
+	background-color: #4f3e85;
 }
 .skills__support{
 	width: 220px;
@@ -183,6 +230,14 @@ font-size: 30px;
 	border-color: #cccccc;
 	background-color: white;
 }
+.skills__support:hover{
+	position: relative;
+	opacity: 1;
+	transform: scale(1.5);
+	transition: 0.5s;
+	color: white;
+	background-color: #4f3e85;
+}
 .skills__icon{
 	width: 80px;
 	height: 80px;
@@ -191,6 +246,7 @@ font-size: 30px;
 	margin: 0 auto;
 	margin-top: 25px;
 }
+
 .skills__header{
 	display: flex;
 	justify-content: center;
