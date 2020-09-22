@@ -24,16 +24,16 @@
 					<nav class="header__navigation">
 						<ul class="header__navigation__items">
 							<li class="header__list">
-								<a id="one" class="header__link" href="#">Главная</a>
+								<a class="header__link" href="#">Главная</a>
 							</li>
 							<li class="header__list">
-								<a id="two" class="header__link" href="#№">Навыки</a>
+								<a class="header__link" href="#skills">Навыки</a>
 							</li>
 							<li class="header__list">
-								<a class="header__link" href="#">Проекты</a>
+								<a id="project" class="header__link" href="#">Проекты</a>
 							</li>
 							<li class="header__list">
-								<a class="header__link" href="#">Контакты</a>
+								<a class="header__link" href="#mail">Контакты</a>
 							</li>
 						</ul>
 					</nav>
@@ -52,9 +52,11 @@
 					Дизайн - молчаливый посол вашего бренда.
 				</div>
 				<div class="intro__button">
-					<button id="btn" type="button">
+					<a class="intro__link_button" href="#skills">
+						<button id="btn" type="button">
 						Подробнее
-					</button>
+						</button>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -62,7 +64,7 @@
 	<div name="skills" id="skills" class="skills">
 		<div class="container">
 				<div class="skills__what">Какие задачи я выполняю</div>
-				<div class="skills__listone">
+				<div id="skills__listone" class="skills__listone">
 					<div id="fskill" class="skills__fixed">
 						<img id="icon__fixed" class="skills__icon" src="img/fixed.svg">
 						<div class="skills__header">
@@ -102,7 +104,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="skills__listtwo">
+				<div id="skills__listtwo" class="skills__listtwo">
 					<div class="skills__design">
 						<img class="skills__icon" src="img/templatedev.svg">
 						<div class="skills__header">
@@ -145,7 +147,7 @@
 		</div>
 	</div>
 	<!-- Форма отправки сообщений -->
-	<div class="mail">
+	<div id="mail" class="mail">
 		<div class="container">
 			<div class="mail__discuss">
 				Обсудить проект

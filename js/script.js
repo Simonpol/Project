@@ -21,20 +21,40 @@ $(document).ready(function(){
 			"border-color": "white",
 		});
 	});
-	// Прокрутка до блока "Какие задачи я выполняю"
-	var butn = document.getElementById("btn");
-	var dp = document.getElementById("skills");
-
-	function scrollInSkills(){
-		dp.scrollIntoView({
-			behavior: "smooth",
-			block: "start"
-		})
-	}
-	butn.addEventListener("click", scrollInSkills)
-	// Конец прокрутки
-
+	// Сообщение при надатии на "Проекты"
+	var projectMes = function(){
+		let project = document.getElementById("project");
+		project.addEventListener("click", function(){
+			alert("Блок в разработке");
+		});
+	};
+	projectMes();
 	
+	// Появление элементов при скролле
+
+	var appearScroll = function(){
+		let fline = document.getElementById("skills__listone");
+		let sline = document.getElementById("skills__listtwo");
+		let skills = document.getElementById("skills");
+		let baselocation = 0;
+		fline.style.opacity = 0;
+		fline.style.marginLeft = 100 + "px";
+		sline.style.opacity = 0;
+		sline.style.marginRight = 100 + "px";
+		
+		window.addEventListener("scroll", function(){
+			let distance = window.pageYOffset;
+			if ( distance >= 500 ){
+				fline.style.opacity = 1;
+				fline.style.transition = "3s";
+				fline.style.marginLeft = 0;
+				sline.style.opacity = 1;
+				sline.style.transition = "3s";
+				sline.style.marginRight = 0;
+			}
+		})
+	};
+	appearScroll();
 
 
 
