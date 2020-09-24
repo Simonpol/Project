@@ -55,6 +55,7 @@ p{
 .header__logo{
 	flex: 0 0 60px;
 }
+
 .header__navigation__items{
 	display: flex;
 }
@@ -78,12 +79,13 @@ a:hover{
 }
 /*Content*/
 
-/*Сделать медиа-запрос*/
+
 .intro{
-	width: 100%;
-	height: 752px;
+	/*width: 100%;*/
+	height: 100vh;
 	background-image: url(../img/bg.png);
-	background-size: 100% 100%;
+	background-size: cover;
+	background-position: center;
 	background-repeat: no-repeat;;
 	padding-top: 80px;
 }
@@ -92,7 +94,7 @@ a:hover{
 	color: white;
 	font-size: 25px;
 	line-height: 45px;
-	margin-top: 269px;
+	margin-top: 40vh;
 	position: 0;
 	
 
@@ -128,6 +130,7 @@ font-size: 30px;
 */
 .skills{
 	padding-top: 60px;
+	padding-bottom: 60px;
 	background-image: url(../img/bgsec.png);
 	background-size: 100% 100vh;
 	background-repeat: no-repeat;
@@ -202,7 +205,7 @@ font-size: 30px;
 .skills__listtwo{
 	margin-top: 55px;
 	display: flex;
-	/*margin-left: 80px;*/
+	margin-left: 80px;
 }
 .skills__design{
 	width: 220px;
@@ -367,8 +370,102 @@ font-size: 30px;
 
 
 @media (max-width: 992px){
+
 	.container{
 		max-width: 750px;
+	}
+	.header__burger{
+	position: relative;
+	width: 30px;
+	height: 30px;
+	
+	}
+	.header__burger:before{
+	top: 0;
+	left: 0;
+	position: absolute;
+	content: "";
+	width: 30px;
+	height: 3px;
+	background-color: white;
+	transition: all 0.3s ease 0s;
+	}
+	.header__burger:after{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 30px;
+	background-color: white;
+	width: 30px;
+	height: 3px;
+	transition: all 0.3s ease 0s;
+	}
+	.header__burger span{
+	position: absolute;
+	left: 0;
+	top: 15px;
+	width: 30px;
+	height: 3px;
+	background-color: white;
+	transition: all 0.3s ease 0s;
+	}
+	.header__burger.active{
+		
+	}
+	.header__burger.active:before{
+		transform: rotate(45deg);
+		top: 15px; 
+	}
+	.header__burger.active:after{
+		top: 15px;
+		transform: rotate(-45deg);
+		
+	}
+	.header__burger.active span{
+		transform: scale(0);
+	}
+
+	.skills__listone{
+		flex-direction: column;
+		float: left;
+	}
+	.skills__fixed{
+		width: 200px;
+		height: 200px;
+	}
+	.skills__adaptive{
+		width: 200px;
+		height: 200px;
+		margin-left: 0px;
+		margin-top: 55px;
+	}
+	.skills__crossbrowser{
+		width: 200px;
+		height: 200px;
+		margin-left: 0px;
+		margin-top: 55px;
+	}
+	.skills__listtwo{
+		flex-direction: column;
+		margin-top: 67px;
+	}
+	.skills__design{
+		width: 200px;
+		height: 200px;
+		margin-left: 161px;
+	}
+	.skills__hosting{
+		width: 200px;
+		height: 200px;
+		margin-top: 55px;
+	}
+	.skills__support{
+		width: 200px;
+		height: 200px;
+		margin-top: 55px;
+	}
+	.header__navigation{
+		display: none;
 	}
 
 }
