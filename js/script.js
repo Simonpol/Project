@@ -47,7 +47,7 @@ $(document).ready(function(){
 			if ( distance >= 500 ){
 				fline.style.opacity = 1;
 				fline.style.transition = "3s";
-				fline.style.marginLeft = 80 + "px";
+				fline.style.marginLeft = 0 + "px";
 				sline.style.opacity = 1;
 				sline.style.transition = "3s";
 				sline.style.marginRight = 0;

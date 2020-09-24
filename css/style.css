@@ -145,10 +145,16 @@ font-size: 30px;
 	width: 452px;
 	margin-top: 55px;
 }
+.skills__list__container{
+	padding-top: 67px;
+	margin: 0 auto;
+}
 .skills__listone{
-	margin-top: 67px;
+	/*margin-top: 67px;*/
 	display: flex;
-	margin-left: 80px;
+	/*margin-left: 80px;*/
+
+	justify-content: center;
 }
 .skills__fixed{
 	width: 220px;
@@ -170,7 +176,8 @@ font-size: 30px;
 .skills__adaptive{
 	width: 220px;
 	height: 220px;
-	margin-left: 161px;
+	/*margin-left: 161px;*/
+	margin-left: 20%;
 	border: 2px solid;
 	border-color: #cccccc;
 	background-color: white;
@@ -188,7 +195,8 @@ font-size: 30px;
 .skills__crossbrowser{
 	width: 220px;
 	height: 220px;
-	margin-left: 161px;
+	/*margin-left: 161px;*/
+	margin-left: 20%;
 	border: 2px solid;
 	border-color: #cccccc;
 	background-color: white;
@@ -205,7 +213,8 @@ font-size: 30px;
 .skills__listtwo{
 	margin-top: 55px;
 	display: flex;
-	margin-left: 80px;
+	justify-content: center;
+	/*margin-left: 80px;*/
 }
 .skills__design{
 	width: 220px;
@@ -227,7 +236,8 @@ font-size: 30px;
 .skills__hosting{
 	width: 220px;
 	height: 220px;
-	margin-left: 161px;
+	/*margin-left: 161px;*/
+	margin-left: 20%;
 	border: 2px solid;
 	border-color: #cccccc;	
 	background-color: white;
@@ -244,7 +254,8 @@ font-size: 30px;
 .skills__support{
 	width: 220px;
 	height: 220px;
-	margin-left: 161px;
+	/*margin-left: 161px;*/
+	margin-left: 20%;
 	border: 2px solid;
 	border-color: #cccccc;
 	background-color: white;
@@ -372,7 +383,7 @@ font-size: 30px;
 @media (max-width: 992px){
 
 	.container{
-		max-width: 750px;
+		max-width: 940px;
 	}
 	.header__burger{
 	position: relative;
@@ -424,10 +435,16 @@ font-size: 30px;
 	.header__burger.active span{
 		transform: scale(0);
 	}
-
+	.skills__list__container{
+		display: flex;
+		justify-content: center;
+	}
 	.skills__listone{
 		flex-direction: column;
 		float: left;
+
+		
+
 	}
 	.skills__fixed{
 		width: 200px;
@@ -447,12 +464,13 @@ font-size: 30px;
 	}
 	.skills__listtwo{
 		flex-direction: column;
-		margin-top: 67px;
+		margin-top: 0px;
+		margin-left: 5%;
 	}
 	.skills__design{
 		width: 200px;
 		height: 200px;
-		margin-left: 161px;
+		margin-left: 20%;
 	}
 	.skills__hosting{
 		width: 200px;
