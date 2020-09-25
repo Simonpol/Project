@@ -139,10 +139,12 @@ font-size: 30px;
 
 }
 .skills__what{
+	display: flex;
+	justify-content: center;
 	font-family:"Raleway-Bold", sans-serif;
 	font-size: 36px;
-	margin: 0 auto;
-	width: 452px;
+	/*margin: 0 auto;
+	width: 452px;*/
 	margin-top: 55px;
 }
 .skills__list__container{
@@ -177,7 +179,7 @@ font-size: 30px;
 	width: 220px;
 	height: 220px;
 	/*margin-left: 161px;*/
-	margin-left: 20%;
+	margin-left: 15%;
 	border: 2px solid;
 	border-color: #cccccc;
 	background-color: white;
@@ -196,7 +198,7 @@ font-size: 30px;
 	width: 220px;
 	height: 220px;
 	/*margin-left: 161px;*/
-	margin-left: 20%;
+	margin-left: 15%;
 	border: 2px solid;
 	border-color: #cccccc;
 	background-color: white;
@@ -237,7 +239,7 @@ font-size: 30px;
 	width: 220px;
 	height: 220px;
 	/*margin-left: 161px;*/
-	margin-left: 20%;
+	margin-left: 15%;
 	border: 2px solid;
 	border-color: #cccccc;	
 	background-color: white;
@@ -255,7 +257,7 @@ font-size: 30px;
 	width: 220px;
 	height: 220px;
 	/*margin-left: 161px;*/
-	margin-left: 20%;
+	margin-left: 15%;
 	border: 2px solid;
 	border-color: #cccccc;
 	background-color: white;
@@ -435,6 +437,10 @@ font-size: 30px;
 	.header__burger.active span{
 		transform: scale(0);
 	}
+	.skills__what{
+		font-size: 32px;
+
+	}
 	.skills__list__container{
 		display: flex;
 		justify-content: center;
@@ -470,7 +476,8 @@ font-size: 30px;
 	.skills__design{
 		width: 200px;
 		height: 200px;
-		margin-left: 20%;
+		margin-left: 15%;
+		
 	}
 	.skills__hosting{
 		width: 200px;
