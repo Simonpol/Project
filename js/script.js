@@ -57,7 +57,7 @@ $(document).ready(function(){
 	appearScroll();
 
 	$(".header__burger").click(function(event){
-		$(".header__burger, .header__menu").toggleClass("active");
+		$(".header__burger, .header__navigation, .header__navigation__items, .header__list, .header__link").toggleClass("active");
 	})
 
 
