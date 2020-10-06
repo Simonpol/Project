@@ -35,8 +35,8 @@ $(document).ready(function(){
 	var appearScroll = function(){
 		let fline = document.getElementById("skills__listone");
 		let sline = document.getElementById("skills__listtwo");
-		let skills = document.getElementById("skills");
-		let baselocation = 0;
+		// let skills = document.getElementById("skills");
+		// let baselocation = 0;
 		fline.style.opacity = 0;
 		fline.style.marginLeft = 100 + "px";
 		sline.style.opacity = 0;

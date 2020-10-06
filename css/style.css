@@ -94,7 +94,8 @@ a:hover{
 
 .intro{
 	/*width: 100%;*/
-	height: 100vh;
+	height: 900px;
+	max-height: 900px;
 	background-image: url(../img/bg.png);
 	background-size: cover;
 	background-position: center;
@@ -106,7 +107,7 @@ a:hover{
 	color: white;
 	font-size: 25px;
 	line-height: 45px;
-	margin-top: 40vh;
+	margin-top: 40%;
 	position: 0;
 	
 
@@ -122,7 +123,7 @@ a:hover{
 	position: relative;
 	margin-top: 125px;
 }
-.intro__link_button{
+.intro__link__button{
 	margin: 0 auto;
 }
 .intro__button button{
@@ -373,14 +374,14 @@ font-size: 30px;
 /*Подвал*/
 .footer{
 	width: 100%;
-	height: 160px;
+	max-height: 160px;
 	display: flex;
 	background-color: black;
 }
 .footer__social{
 	display: flex;
 	align-items: center;
-	height: 160px;
+	/*height: 160px;*/
 }
 .footer__link{
 	padding: 65px;
@@ -515,7 +516,7 @@ font-size: 30px;
 	.skills__listtwo{
 		flex-direction: column;
 		margin-top: 0px;
-		margin-left: 5%;
+		margin-left: 10%;
 	}
 	.skills__design{
 		width: 200px;
@@ -533,11 +534,140 @@ font-size: 30px;
 		height: 200px;
 		margin-top: 55px;
 	}
+	.footer__link{
+		padding: 50;
+	}
 }
 
 
 @media ( max-width: 767px){
 	.container{
+		max-width: 720px;
+	}
+	.skills__listtwo{
+		margin-left: 0;
+	}
+}
+
+@media ( max-width: 576px){
+	.container{
 		max-width: none;
+	}
+	.intro__main h1{
+		font-size: 35px;
+	}
+	.intro__button {
+		max-width: 100%;
+		/*margin-bottom: 20px;*/
+
+
+	}
+	.intro__link__button {
+		width: 60%;
+		/*margin-bottom: 60px;*/
+		
+
+	}
+	.intro__button button{
+			width: 100%;
+			font-size: 20px;
+	}
+
+
+	.skills{
+		background-repeat: repeat-y;
+	}
+	.skills__what{
+		font-size: 20px;
+	}
+	.skills__list__container{
+		display: block;
+	}
+	.skills__listone{
+		display: flex;
+		float: none;
+		align-items: center;
+	}
+	.skills__fixed{
+		width: 70%;
+		height: 260px;
+
+	}
+	.skills__adaptive{
+		width: 70%;
+		height: 260px;
+	}
+	.skills__crossbrowser{
+		width: 70%;
+		height: 260px;
+	}
+
+
+
+
+	.skills__listtwo{
+		display: flex;
+		float: none;
+		align-items: center;
+		margin-top: 55px;
+	}
+	.skills__design{
+		margin-left: 0;
+		width: 70%;
+		height: 260px;
+	}
+	.skills__hosting{
+		margin-left: 0;
+		width: 70%;
+		height: 260px;
+	}
+	.skills__support{
+		margin-left: 0;
+		width: 70%;
+		height: 260px;
+	}
+
+
+
+	.mail__feedback{
+		width: 100%;
+		display: block;
+	}
+	.mail__discuss{
+		font-size: 20px;
+	}
+	.mail__quote{
+		font-size: 15px;
+	}
+	.mail__form{
+		
+		flex-direction: column;
+		margin-left: 20%;
+	}
+	.mail__input{
+		width: 80%;
+	}
+	.mail__message{
+		width: 80%;
+	}
+	.mail__button{
+		float: none;
+		
+	}
+
+
+
+
+
+
+
+
+	.footer{
+		max-height: 160px;
+	}
+	.footer__link{
+		/*margin-top: 50%;*/
+		padding: 25px;
+		margin-left: 0;
 	}
 }
