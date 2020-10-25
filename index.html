@@ -169,28 +169,28 @@
 				успех вашей компании начинается здесь
 			</div>
 			<div class="mail__feedback">
-				<form class="mail__form" method="post" name="form">
+				<form action="send.php" class="mail__form" method="post" name="form">
 					<label class="mail__label">
 						ИМЯ:
 					</label>
 					<br>
-					<input class="mail__input" type="text" name="name" placeholder="ИМЯ">
+					<input class="mail__input" type="text" name="fio" placeholder="ИМЯ" required>
 					<br>
 					<label class="mail__label">
 						E-MAIL:
 					</label>
 					<br>
-					<input class="mail__input" type="mail" name="email" placeholder="example@gmail.com">
+					<input class="mail__input" type="mail" name="email" placeholder="example@gmail.com" required>
 					<br>
 					<label class="mail__label">
 						СООБЩЕНИЕ:
 					</label>
 					<br>
-					<textarea class="mail__message">
+					<textarea class="mail__message" required>
 						
 					</textarea>
 					<br>
-					<button type="button" class="mail__button">
+					<button type="submit" value="Отправить" class="mail__button">
 						ОТПРАВИТЬ
 					</button>
 
