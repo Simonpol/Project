@@ -1,25 +1,21 @@
 <?php
-$fio = $_POST['fio'];
+$name = $_POST['name'];
 $email = $_POST['email'];
-// Преобразуем символы(амперсант, кавычки итд)
-$fio = htmlspecialchars($fio);
-$email = htmlspecialchars($email);
-// Декодирование url
-$fio = urldecode($fio);
-$email = urldecode($email);
-// Удаление пробелов с начала и конца
-$fio = trim($fio);
-$email = trim($email);
+$message = $_POST['message'];
+$subject = "=?utf-8?B?".base64_encode("Заявка с сайта")."?=";
+$headers = "From: $email\r\nReply to: $email\r\nContent-type: text/html; charset=utf-8\r\n";
 
-// mail("d.romanuk@mail.ru", "Заявка с сайта", "ФИО:".$fio". E-mail:".$email ,"From: den_luapnov@mai.ru \r \n");
-if (mail("d.romanuk@mail.ru", "Заявка с сайта", "ФИО:".$fio. "E-mail:".$email ,"From: den_luapnov@mai.ru \r \n"))
-{ 
-	echo "Сообщение отправлено";
-}else{
-	echo "Ошибка при отправке сообщения";
+
+
+$name = trim($name);
+$name = trim($email);
+
+if (isset($name) && isset($email) && isset($message)){
+    $success = mail("d.romanuk@mail.ru", $subject, $message, $headers);
+    echo $success;
 }
-ini_set('display_errors','On');
-error_reporting('E_ALL');
-
+ini_set("display_errors","1");
+ini_set("display_startup_errors","1");
+ini_set('error_reporting', E_ALL);
 
 ?>

@@ -310,6 +310,28 @@ font-size: 30px;
 .portfolio{
 	height: 675px;
 }
+.portfolio__header{
+	display: flex;
+	justify-content: center;
+	margin-top: 55px;
+	font-family: "Raleway-Bold", sans-serif;
+	font-size: 36px;
+}
+.portfolio__fline{
+	margin-top: 60px;
+	display: flex;
+	flex-direction: row;
+}
+.portfolio__block{
+	width: 33.3%;
+	height: 318px;
+	background-color: coral;
+	border: 1px solid black;
+}
+.portfolio__sline{
+display: flex;
+flex-direction: row;
+}
 
 /*Форма сообщений*/
 .mail{
